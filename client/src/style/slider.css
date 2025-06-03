@@ -1,0 +1,48 @@
+.slide{
+  width: 10rem !important;
+  height: 10rem;
+  /* border-radius: 50%; */
+  /* border: red solid 2px; */
+  margin: 0.5rem;
+ 
+}
+.slide div{
+  width: 10rem;
+  font-size: larger;
+  font-weight: 500;
+  
+}
+.bx{
+  overflow-x: scroll;
+  scrollbar-width: 3px;
+}
+.slideimg{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.slideimg:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.562);
+}
+  
+/* Style for the scrollbar track */
+.bx::-webkit-scrollbar {
+   width: 0.1rem;
+  cursor: pointer;
+  scrollbar-width: 2px;
+}
+
+/* Style for the scrollbar thumb */
+.bx::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb; /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners of the thumb */
+  cursor: pointer;
+}
+
+/* Style for the scrollbar track */
+.bx::-webkit-scrollbar-track {
+  /* width: 10px; */
+  background-color: none; /* Color of the track */
+}

@@ -1,0 +1,68 @@
+.hbg{
+    height: 28rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 2, 2, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('../../public/image/bg.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.headingtxt{
+    font-size: 5rem;
+    font-family: 'Lora';
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+}
+.headnortext{
+    font-family: 'Kanit';
+    margin-bottom: 1.5rem;
+}
+.sicon{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.headsearch{
+    height: 50px;
+    width: 82%;
+    border-radius: 10px;
+    border: red 1px solid;
+    text-align: center;
+}
+
+.headsearch::placeholder{
+    text-align: center;
+    font-size: larger;
+}
+
+.searchbox{
+    border-radius: 10%;
+}
+@media screen and (max-width : 600px) {
+    .headingtxt{
+        font-size: 4rem;
+    }
+    .headnortext{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width : 400px) {
+    .headingtxt{
+        font-size: 3rem;
+    }
+    .headnortext{
+        font-size: 1.5rem;
+    }
+    .sicon{
+        font-size: 1.3rem;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width : 300px) {
+    .headingtxt{
+        font-size: 3rem;
+    }
+    .headnortext{
+        font-size: 1rem;
+    }
+}

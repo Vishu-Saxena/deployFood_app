@@ -1,0 +1,45 @@
+.search{
+    height: 50px;
+    width: 82%;
+    border-radius: 10px;
+    border: red 1px solid;
+    text-align: center;
+}
+
+.search::placeholder{
+    text-align: center;
+    font-size: smaller;
+}
+
+.searchbox{
+    border-radius: 10%;
+}
+
+.srchHeadingbx{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width : 575px) {
+    
+    .srchHeadingbx{
+        display: none;
+    }
+}
+@media screen and (max-width : 990px) {
+    .srchHeading{
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width : 766px) {
+    .srchHeading{
+        font-size: 1.2rem;
+    }
+    .search{
+        height: 40px;
+    }
+}
+
+

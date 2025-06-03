@@ -1,0 +1,95 @@
+.cartdiv{
+    min-height: 20rem;
+    width: auto;
+}
+.btnDiv {
+    display: flex;
+    justify-content: space-between;
+}
+.crtNme{
+    display: flex;
+    /* border: 1px rgb(89, 0, 255) solid; */
+}
+.crtImg{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px red solid; */
+    width: 4rem;
+    height: 3rem;
+    /* color: rgb(177, 177, 177); */
+    /* margin-left: 1rem; */
+}
+.cartclr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    margin-left: 0.3rem;
+}
+.crtImg img{
+    width: 100%;
+}
+.crtclrbtn{
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+.smlTxt{
+    font-size: 0.6rem;
+    color: black;
+}
+.cartTotaldiv{
+    font-size: 0.9rem;
+    width: 18rem;
+    min-height: 10rem;
+}
+@media screen and (max-width : 991px) {
+    .cartTotaldiv{
+        font-size: 0.7rem;
+        width: 14rem;
+        min-height: 8rem;
+    }
+    .smlTxt{
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width : 767px) {
+    .crtclrbtn{
+        margin-left: 0.2rem;
+        margin-bottom: 1rem;
+    }
+    .fnt{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width : 615px) {
+    .fnt{
+        font-size: 0.7rem;
+        
+    }
+    .cartdiv{
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .td-hide{
+        display: none;
+    }
+}
+
+.emtyCartbx{
+    min-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.emtyCartbx div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

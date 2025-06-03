@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.dbx{
+    height: 15rem;
+}
+.dimg{
+    height: 20rem;
+}
+.dimg img{
+    width: 100%;
+    height: 100%;
+}
+.dtxt{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
