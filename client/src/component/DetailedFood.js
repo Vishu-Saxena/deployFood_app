@@ -34,7 +34,7 @@ const DetailedFood = () => {
     const details = async()=>{
       try {
         if(id){
-          const res = await axios.get(`http://localhost:8080/api/food/getsingleFood/${id}`);
+          const res = await axios.get(`https://deploy-food-app-five.vercel.app/api/food/getsingleFood/${id}`);
           // console.log(res);
           if(res?.data?.success){
             setItm(res.data.foodData[0]);
@@ -71,7 +71,7 @@ const DetailedFood = () => {
     const getthedata =async()=>{
       try {
           if(fooditm?.CategoryName){
-              const res = await axios.get(`http://localhost:8080/api/food/foodofsinglesamecat/${fooditm.CategoryName}`);
+              const res = await axios.get(`https://deploy-food-app-five.vercel.app/api/food/foodofsinglesamecat/${fooditm.CategoryName}`);
               // console.log(res);
               if(res?.data?.success){
                   setSimilar(res.data.data);

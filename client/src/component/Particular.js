@@ -13,7 +13,7 @@ const Particular = () => {
     const getthedata =async()=>{
         try {
             if(categoryname){
-                const res = await axios.get(`http://localhost:8080/api/food/foodofsinglesamecat/${categoryname}`);
+                const res = await axios.get(`https://deploy-food-app-five.vercel.app/api/food/foodofsinglesamecat/${categoryname}`);
                 // console.log(res);
                 if(res?.data?.success){
                     setFood(res.data.data);

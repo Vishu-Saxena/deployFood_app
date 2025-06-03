@@ -21,7 +21,7 @@ const CartPage = () => {
   //get payment gateway token
   const getToken = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/food/braintree/token");
+      const { data } = await axios.get("https://deploy-food-app-five.vercel.app/api/food/braintree/token");
       setClientToken(data?.clientToken);
       console.log(data);
     } catch (error) {
@@ -33,7 +33,7 @@ const CartPage = () => {
   const handlePayment = async () => {
     try {
       const { nonce } = await instance.requestPaymentMethod();
-      const { data } = await axios.post("http://localhost:8080/api/food/braintree/payment", {
+      const { data } = await axios.post("https://deploy-food-app-five.vercel.app/api/food/braintree/payment", {
         nonce,
         cart,
       });

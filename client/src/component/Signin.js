@@ -22,7 +22,7 @@ const Signin = () => {
   const handleSubmit= async(e)=>{
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/api/user/login" , user);
+      const res = await axios.post("https://deploy-food-app-five.vercel.app/api/user/login" , user);
       // console.log(res.data);
       if(res.data.success){
         toastfn("Logged in successfully");

@@ -22,7 +22,7 @@ const{ toastfn , errortoastfn } = useAuthContext();
   const handleSubmit= async(e)=>{
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/api/user/signup" , user);
+      const res = await axios.post("https://deploy-food-app-five.vercel.app/api/user/signup" , user);
       if(res?.data?.success){
         toastfn("signed up successfuly");
         navigate('/signin');

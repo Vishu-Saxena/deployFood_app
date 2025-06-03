@@ -15,7 +15,7 @@ const OderHisVal = (props)=>{
     // function to fetch to order history list
     const getorderhist=async(userid)=>{
         try {
-            const res = await axios.get(`http://localhost:8080/api/ordershistory/getorders/${userid}`);
+            const res = await axios.get(`https://deploy-food-app-five.vercel.app/api/ordershistory/getorders/${userid}`);
             if(res?.data?.getOrders){
                 setOrderhist(res.data.getOrders);
                 setLoading(false);
@@ -33,7 +33,7 @@ const OderHisVal = (props)=>{
     const addOderHistory = async(order)=>{
         console.log("into oder history");
         console.log(order);
-        const res= await axios.post("http://localhost:8080/api/ordershistory/addOrders" , {...order} );
+        const res= await axios.post("https://deploy-food-app-five.vercel.app/api/ordershistory/addOrders" , {...order} );
                 if(!res?.data?.success){
                     console.log(res);
                     
@@ -47,7 +47,7 @@ const OderHisVal = (props)=>{
         console.log(id);
         try {
             if(id){
-                const res = await axios.delete(`http://localhost:8080/api/ordershistory/deleteOrder/${id}`);
+                const res = await axios.delete(`https://deploy-food-app-five.vercel.app/api/ordershistory/deleteOrder/${id}`);
                 if(res?.data?.success){
                     window.alert("deleted successfully");
                     // window.location.reload();
