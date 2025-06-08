@@ -18,6 +18,7 @@ app.use(cors(
     }
 ));
 
+
 DB_connection(); // invoked databse connection
 app.get('/' , (req ,res)=>{
     res.send("Hi");
